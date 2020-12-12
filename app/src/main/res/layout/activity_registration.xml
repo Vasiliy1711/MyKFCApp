@@ -25,13 +25,11 @@
         <ImageView
             android:layout_width="@dimen/view_width"
             android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
-            android:layout_marginBottom="32dp"
             android:src="@drawable/kfc2"/>
 
         <TextView
-            android:id="@+id/textViewEmail"
-            android:text="@string/email"
+            android:id="@+id/textViewName"
+            android:text="@string/name"
             android:fontFamily="@font/exo_bold"
             android:textColor="@android:color/black"
             android:textAlignment="center"
@@ -41,14 +39,51 @@
             android:layout_marginBottom="4dp"/>
 
         <EditText
-            android:id="@+id/ediTextEmail"
+            android:id="@+id/ediTextName"
             android:layout_width="@dimen/view_width"
             android:layout_height="@dimen/view_height"
             android:background="@drawable/rounded4_white_gray_stroke"
-            android:layout_marginBottom="12dp"/>
+            android:layout_marginBottom="4dp"/>
 
         <TextView
-            android:id="@+id/textViewPassword"
+            android:id="@+id/textViewSurname"
+            android:layout_width="@dimen/view_width"
+            android:layout_height="@dimen/text_view_height"
+            android:text="@string/surname"
+            android:fontFamily="@font/exo_bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size"
+            android:layout_marginBottom="4dp"/>
+
+
+        <EditText
+            android:id="@+id/ediTextSurname"
+            android:layout_width="@dimen/view_width"
+            android:layout_height="@dimen/view_height"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/rounded4_white_gray_stroke" />
+
+        <TextView
+            android:id="@+id/textViewEditEmail"
+            android:layout_width="@dimen/view_width"
+            android:layout_height="@dimen/text_view_height"
+            android:text="@string/email"
+            android:fontFamily="@font/exo_bold"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/editTxtEmail"
+            android:layout_width="@dimen/view_width"
+            android:layout_height="@dimen/view_height"
+            android:background="@drawable/rounded4_white_gray_stroke"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/textViewEditPassword"
             android:layout_width="@dimen/view_width"
             android:layout_height="@dimen/text_view_height"
             android:text="@string/password"
@@ -58,51 +93,55 @@
             android:textSize="@dimen/text_size"
             android:layout_marginBottom="4dp"/>
 
-
         <EditText
-            android:id="@+id/ediTextPassword"
+            android:id="@+id/editTxtPassword"
             android:layout_width="@dimen/view_width"
             android:layout_height="@dimen/view_height"
-            android:layout_marginBottom="12dp"
-            android:background="@drawable/rounded4_white_gray_stroke" />
+            android:background="@drawable/rounded4_white_gray_stroke"
+            android:layout_marginBottom="4dp"/>
 
         <TextView
-            android:id="@+id/textViewForgot"
+            android:id="@+id/textViewRepeatPassword"
             android:layout_width="@dimen/view_width"
             android:layout_height="@dimen/text_view_height"
-            android:text="@string/forgot_your_password"
+            android:text="@string/repeat"
             android:fontFamily="@font/exo_bold"
+            android:textColor="@android:color/black"
             android:textAlignment="center"
             android:textSize="@dimen/text_size"
-            android:textColor="@color/color_red"
-            android:layout_marginBottom="32dp"/>
+            android:layout_marginBottom="4dp"/>
 
-        <TextView
-            android:id="@+id/buttonEnter"
+        <EditText
+            android:id="@+id/editTxtRepeatPassword"
             android:layout_width="@dimen/view_width"
             android:layout_height="@dimen/view_height"
-            android:text="@string/entry"
-            android:fontFamily="@font/exo_bold"
+            android:background="@drawable/rounded4_white_gray_stroke"
+            android:layout_marginBottom="28dp"/>
+
+        <TextView
+            android:id="@+id/buttonRegistration"
+            android:layout_width="@dimen/view_width"
+            android:layout_height="@dimen/view_height"
+            android:text="@string/registration"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/exo_reg"
             android:textSize="@dimen/text_size"
             android:textAlignment="center"
-            android:padding="10dp"
-            android:layout_marginBottom="120dp"
-            android:textColor="@android:color/white"
-            android:background="@drawable/rounded4_red_stroke"/>
-
+            android:background="@drawable/rounded4_red_stroke"
+            android:padding="10dp"/>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/registration"
+        android:id="@+id/txtViewPrivacyPolicy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
         android:layout_marginBottom="30dp"
-        android:fontFamily="@font/exo_bold"
-        android:text="@string/registration"
+        android:layout_centerInParent="true"
         android:textColor="@android:color/white"
-        android:textSize="@dimen/text_size" />
+        android:textSize="@dimen/text_size"
+        android:fontFamily="@font/exo_reg"
+        android:text="@string/privacy_policy" />
 
 
 

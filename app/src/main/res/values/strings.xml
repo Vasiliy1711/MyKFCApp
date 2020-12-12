@@ -5,4 +5,10 @@
     <string name="password">Пароль</string>
     <string name="email">Email</string>
     <string name="registration">Регистрация</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="repeat">Повторите пароль</string>
+    <string name="password">Пароль</string>
+    <string name="email">Email</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
 </resources>
