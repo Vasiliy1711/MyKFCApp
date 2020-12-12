@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyKFCApp</string>
+    <string name="entry">Войти</string>
+    <string name="forgot_your_password">Забыли пароль?</string>
+    <string name="password">Пароль</string>
+    <string name="email">Email</string>
+    <string name="registration">Регистрация</string>
+</resources>
