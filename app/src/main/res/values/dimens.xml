@@ -4,5 +4,9 @@
     <dimen name="view_width">280dp</dimen>
     <dimen name="view_height">38dp</dimen>
     <dimen name="text_view_height">22dp</dimen>
-    <dimen name="text_size">16sp</dimen>
+    <dimen name="size_xs">10dp</dimen>
+    <dimen name="size_s">11.5dp</dimen>
+    <dimen name="size_m">12.5dp</dimen>
+    <dimen name="size_l">15dp</dimen>
+    <dimen name="size_xl">18dp</dimen>
 </resources>

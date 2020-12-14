@@ -9,11 +9,11 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="64dp"
-        android:layout_marginBottom="72dp"
-        android:layout_marginRight="@dimen/oval_length"
-        android:layout_marginLeft="@dimen/oval_length"
         android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/oval_length"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="@dimen/oval_length"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/circle_white" />
 
     <LinearLayout
@@ -25,110 +25,68 @@
         <ImageView
             android:layout_width="@dimen/view_width"
             android:layout_height="wrap_content"
-            android:src="@drawable/kfc2"/>
+            android:src="@drawable/kfc2" />
 
         <TextView
             android:id="@+id/textViewName"
-            android:text="@string/name"
-            android:fontFamily="@font/exo_bold"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:textSize="@dimen/text_size"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/text_view_height"
-            android:layout_marginBottom="4dp"/>
+            style="@style/TVReg.L.ETName"
+            android:layout_marginBottom="4dp"
+            android:text="@string/name" />
 
         <EditText
             android:id="@+id/ediTextName"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/view_height"
-            android:background="@drawable/rounded4_white_gray_stroke"
-            android:layout_marginBottom="4dp"/>
+            style="@style/ETCommon"
+            android:layout_marginBottom="4dp" />
 
         <TextView
             android:id="@+id/textViewSurname"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/text_view_height"
-            android:text="@string/surname"
-            android:fontFamily="@font/exo_bold"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:textSize="@dimen/text_size"
-            android:layout_marginBottom="4dp"/>
+            style="@style/TVReg.L.ETName"
+            android:layout_marginBottom="4dp"
+            android:text="@string/surname" />
 
 
         <EditText
             android:id="@+id/ediTextSurname"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/view_height"
-            android:layout_marginBottom="4dp"
-            android:background="@drawable/rounded4_white_gray_stroke" />
+            style="@style/ETCommon"
+            android:layout_marginBottom="4dp" />
 
         <TextView
             android:id="@+id/textViewEditEmail"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/text_view_height"
-            android:text="@string/email"
-            android:fontFamily="@font/exo_bold"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:textSize="@dimen/text_size"
-            android:layout_marginBottom="4dp"/>
+            style="@style/TVReg.L.ETName"
+            android:layout_marginBottom="4dp"
+            android:text="@string/email" />
 
         <EditText
             android:id="@+id/editTxtEmail"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/view_height"
-            android:background="@drawable/rounded4_white_gray_stroke"
-            android:layout_marginBottom="4dp"/>
+            style="@style/ETCommon"
+            android:layout_marginBottom="4dp" />
 
         <TextView
             android:id="@+id/textViewEditPassword"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/text_view_height"
-            android:text="@string/password"
-            android:fontFamily="@font/exo_bold"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:textSize="@dimen/text_size"
-            android:layout_marginBottom="4dp"/>
+            style="@style/TVReg.L.ETName"
+            android:layout_marginBottom="4dp"
+            android:text="@string/password" />
 
         <EditText
             android:id="@+id/editTxtPassword"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/view_height"
-            android:background="@drawable/rounded4_white_gray_stroke"
-            android:layout_marginBottom="4dp"/>
+            style="@style/ETCommon"
+            android:layout_marginBottom="4dp" />
 
         <TextView
             android:id="@+id/textViewRepeatPassword"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/text_view_height"
-            android:text="@string/repeat"
-            android:fontFamily="@font/exo_bold"
-            android:textColor="@android:color/black"
-            android:textAlignment="center"
-            android:textSize="@dimen/text_size"
-            android:layout_marginBottom="4dp"/>
+            style="@style/TVReg.L.ETName"
+            android:layout_marginBottom="4dp"
+            android:text="@string/repeat" />
 
         <EditText
             android:id="@+id/editTxtRepeatPassword"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/view_height"
-            android:background="@drawable/rounded4_white_gray_stroke"
-            android:layout_marginBottom="28dp"/>
+            style="@style/ETCommon"
+            android:layout_marginBottom="28dp" />
 
         <TextView
             android:id="@+id/buttonRegistration"
-            android:layout_width="@dimen/view_width"
-            android:layout_height="@dimen/view_height"
-            android:text="@string/registration"
-            android:textColor="@android:color/white"
-            android:fontFamily="@font/exo_reg"
-            android:textSize="@dimen/text_size"
-            android:textAlignment="center"
-            android:background="@drawable/rounded4_red_stroke"
-            android:padding="10dp"/>
+            style="@style/LRButton"
+            android:text="@string/registration" />
     </LinearLayout>
 
     <TextView
@@ -136,13 +94,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
         android:layout_centerInParent="true"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/text_size"
+        android:layout_marginBottom="30dp"
         android:fontFamily="@font/exo_reg"
-        android:text="@string/privacy_policy" />
-
+        android:text="@string/privacy_policy"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/size_l" />
 
 
 </RelativeLayout>

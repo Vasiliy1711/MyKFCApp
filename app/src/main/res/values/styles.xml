@@ -7,4 +7,78 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TVReg">
+        <item name="android:hyphenationFrequency">none</item>
+        <item name="fontFamily">@font/exo_reg</item>
+        <item name="android:textColor">@color/gray4</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TVReg.XS">
+        <item name="android:textSize">@dimen/size_xs</item>
+    </style>
+
+    <style name="TVReg.S">
+        <item name="android:textSize">@dimen/size_s</item>
+    </style>
+
+    <style name="TVReg.M">
+        <item name="android:textSize">@dimen/size_m</item>
+    </style>
+
+    <style name="TVReg.L">
+        <item name="android:textSize">@dimen/size_l</item>
+    </style>
+
+    <style name="TVReg.L.ETName">
+        <item name="android:layout_width">@dimen/view_width</item>
+        <item name="android:layout_height">@dimen/text_view_height</item>
+    </style>
+
+    <style name="TVReg.XL">
+        <item name="android:textSize">@dimen/size_xl</item>
+    </style>
+
+    <style name="TVBold">
+        <item name="android:hyphenationFrequency">none</item>
+        <item name="fontFamily">@font/exo_bold</item>
+        <item name="android:textColor">@color/gray4</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TVBold.XS">
+        <item name="android:textSize">@dimen/size_xs</item>
+    </style>
+
+    <style name="TVBold.S">
+        <item name="android:textSize">@dimen/size_s</item>
+    </style>
+
+    <style name="TVBold.M">
+        <item name="android:textSize">@dimen/size_m</item>
+    </style>
+
+    <style name="TVBold.L">
+        <item name="android:textSize">@dimen/size_l</item>
+    </style>
+
+    <style name="TVBold.XL">
+        <item name="android:textSize">@dimen/size_xl</item>
+    </style>
+
+    <style name="ETCommon">
+        <item name="android:background">@drawable/rounded4_white_gray_stroke</item>
+        <item name="android:layout_width">@dimen/view_width</item>
+        <item name="android:layout_height">@dimen/view_height</item>
+    </style>
+
+    <style name="LRButton">
+        <item name="android:background">@drawable/rounded4_red_stroke</item>
+        <item name="android:layout_width">@dimen/view_width</item>
+        <item name="android:layout_height">@dimen/view_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_l</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>
