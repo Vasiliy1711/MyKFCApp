@@ -9,4 +9,16 @@
     <string name="repeat">Повторите пароль</string>
     <string name="surname">Фамилия</string>
     <string name="name">Имя</string>
+    <string name="categories">Категории</string>
+    <string name="favourites">Избранное</string>
+    <string name="search">Поиск</string>
+    <string name="profile">Профиль</string>
+    <string name="description">Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididund ut labore et dolore</string>
+    <string name="updated">Обновлено:</string>
+    <string name="_22_2020">22 августа 2020</string>
+    <string name="files">Файлов:</string>
+    <string name="quantity">8</string>
+    <string name="item_name">Твистеры</string>
+    <string name="doc_description">Working together with @Triyandi Saputra doing an exploration about KFC delivery app.More screen and animation coming</string>
+    <string name="strips">Стрипсы</string>
 </resources>

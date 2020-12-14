@@ -21,7 +21,7 @@
             style="@style/TVReg.M"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category" />
+            android:text="@string/categories" />
 
     </LinearLayout>
 
@@ -42,7 +42,7 @@
             style="@style/TVReg.M"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category" />
+            android:text="@string/favourites" />
 
     </LinearLayout>
 
@@ -63,7 +63,7 @@
             style="@style/TVReg.M"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category" />
+            android:text="@string/search" />
 
     </LinearLayout>
 
@@ -84,7 +84,7 @@
             style="@style/TVReg.M"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category" />
+            android:text="@string/profile" />
 
     </LinearLayout>
 
