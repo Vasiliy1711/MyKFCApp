@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_red"
-    tools:context=".MainActivity">
+    tools:context=".ActMain">
 
     <View
         android:layout_width="match_parent"

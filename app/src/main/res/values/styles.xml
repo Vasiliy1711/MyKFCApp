@@ -30,14 +30,15 @@
         <item name="android:textSize">@dimen/size_l</item>
     </style>
 
+    <style name="TVReg.XL">
+        <item name="android:textSize">@dimen/size_xl</item>
+    </style>
+
     <style name="TVReg.L.ETName">
         <item name="android:layout_width">@dimen/view_width</item>
         <item name="android:layout_height">@dimen/text_view_height</item>
     </style>
 
-    <style name="TVReg.XL">
-        <item name="android:textSize">@dimen/size_xl</item>
-    </style>
 
     <style name="TVBold">
         <item name="android:hyphenationFrequency">none</item>
@@ -45,6 +46,7 @@
         <item name="android:textColor">@color/gray4</item>
         <item name="android:gravity">center</item>
     </style>
+
 
     <style name="TVBold.XS">
         <item name="android:textSize">@dimen/size_xs</item>
@@ -80,5 +82,87 @@
         <item name="android:textSize">@dimen/size_l</item>
         <item name="android:gravity">center</item>
     </style>
+
+    <style name="TVFavLight">
+        <item name="android:hyphenationFrequency">none</item>
+        <item name="fontFamily">@font/fa_light</item>
+        <item name="android:textColor">@color/gray4</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TVFavLight.XS">
+        <item name="android:textSize">@dimen/size_fav_xs</item>
+    </style>
+
+    <style name="TVFavLight.S">
+        <item name="android:textSize">@dimen/size_fav_s</item>
+    </style>
+
+    <style name="TVFavLight.M">
+        <item name="android:textSize">@dimen/size_fav_m</item>
+    </style>
+
+    <style name="TVFavLight.L">
+        <item name="android:textSize">@dimen/size_fav_l</item>
+    </style>
+
+    <style name="TVFavLight.XL">
+        <item name="android:textSize">@dimen/size_fav_xl</item>
+    </style>
+
+    <style name="TVFavSolid">
+        <item name="android:hyphenationFrequency">none</item>
+        <item name="fontFamily">@font/fa_solid</item>
+        <item name="android:textColor">@color/gray4</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TVFavSolid.XS">
+        <item name="android:textSize">@dimen/size_fav_xs</item>
+    </style>
+
+    <style name="TVFavSolid.S">
+        <item name="android:textSize">@dimen/size_fav_s</item>
+    </style>
+
+    <style name="TVFavSolid.M">
+        <item name="android:textSize">@dimen/size_fav_m</item>
+    </style>
+
+    <style name="TVFavSolid.L">
+        <item name="android:textSize">@dimen/size_fav_l</item>
+    </style>
+
+    <style name="TVFavSolid.XL">
+        <item name="android:textSize">@dimen/size_fav_xl</item>
+    </style>
+
+    <style name="TVFavLightRed">
+        <item name="android:hyphenationFrequency">none</item>
+        <item name="fontFamily">@font/fa_light</item>
+        <item name="android:textColor">@color/color_red</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TVFavLightRed.XS">
+        <item name="android:textSize">@dimen/size_fav_xs</item>
+    </style>
+
+    <style name="TVFavLightRed.S">
+        <item name="android:textSize">@dimen/size_fav_s</item>
+    </style>
+
+    <style name="TVFavLightRed.M">
+        <item name="android:textSize">@dimen/size_fav_m</item>
+    </style>
+
+    <style name="TVFavLightRed.L">
+        <item name="android:textSize">@dimen/size_fav_l</item>
+    </style>
+
+    <style name="TVFavLightRed.XL">
+        <item name="android:textSize">@dimen/size_fav_xl</item>
+    </style>
+
 
 </resources>

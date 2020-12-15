@@ -9,4 +9,9 @@
     <dimen name="size_m">12.5dp</dimen>
     <dimen name="size_l">15dp</dimen>
     <dimen name="size_xl">18dp</dimen>
+    <dimen name="size_fav_xs">13dp</dimen>
+    <dimen name="size_fav_s">14.5dp</dimen>
+    <dimen name="size_fav_m">15.5dp</dimen>
+    <dimen name="size_fav_l">18dp</dimen>
+    <dimen name="size_fav_xl">21dp</dimen>
 </resources>

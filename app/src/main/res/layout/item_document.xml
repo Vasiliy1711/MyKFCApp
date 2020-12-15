@@ -33,11 +33,35 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
+            <TextView
+                android:id="@+id/txtPdf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="8dp"
+                style="@style/TVFavLightRed.M"
+                android:text="@string/btn_pdf"/>
+
+            <TextView
+                android:id="@+id/txtVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/txtPdf"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="8dp"
+                style="@style/TVFavLightRed.M"
+                android:text="@string/btn_video"/>
+
+            <TextView
+                android:id="@+id/txtLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@id/txtVideo"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="8dp"
+                style="@style/TVFavLightRed.M"
+                android:text="@string/btn_link"/>
 
             <TextView
                 android:id="@+id/doc_description"
@@ -55,7 +79,7 @@
                 android:id="@+id/doc_update"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="22 августа 2020"
+                android:text="@string/date1"
                 android:textColor="@color/gray5"
                 android:fontFamily="@font/exo_bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +90,7 @@
                 android:id="@+id/txt_update"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Обновлено: "
+                android:text="@string/updated"
                 android:textColor="@color/gray5"
                 android:fontFamily="@font/exo_bold"
                 android:layout_marginTop="12dp"

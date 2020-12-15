@@ -12,12 +12,14 @@
         android:orientation="vertical">
 
         <TextView
-            style="@style/TVReg.XL"
+            android:id="@+id/btn_categories"
+            style="@style/TVFavLight.XL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X" />
+            android:text="@string/btn_categories" />
 
         <TextView
+            android:id="@+id/txt_categories"
             style="@style/TVReg.M"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,12 +35,14 @@
         android:orientation="vertical">
 
         <TextView
-            style="@style/TVReg.XL"
+            android:id="@+id/btn_favourites"
+            style="@style/TVFavLight.XL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X" />
+            android:text="@string/btn_favourites" />
 
         <TextView
+            android:id="@+id/txt_favourites"
             style="@style/TVReg.M"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,12 +58,14 @@
         android:orientation="vertical">
 
         <TextView
-            style="@style/TVReg.XL"
+            android:id="@+id/btn_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X" />
+            style="@style/TVFavLight.XL"
+            android:text="@string/btn_search" />
 
         <TextView
+            android:id="@+id/txt_search"
             style="@style/TVReg.M"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,12 +81,14 @@
         android:orientation="vertical">
 
         <TextView
-            style="@style/TVReg.XL"
+            android:id="@+id/btn_profile"
+            style="@style/TVFavLight.XL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X" />
+            android:text="@string/btn_profile" />
 
         <TextView
+            android:id="@+id/txt_profile"
             style="@style/TVReg.M"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
