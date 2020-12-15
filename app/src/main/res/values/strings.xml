@@ -27,6 +27,10 @@
     <string name="item_name3">Баскеты</string>
     <string name="doc_description">Working together with @Triyandi Saputra doing an exploration about KFC delivery app.More screen and animation coming</string>
     <string name="strips">Стрипсы</string>
+    <string name="party_basket">Пати баскет</string>
+    <string name="basket24">Баскет 24</string>
+    <string name="basket_duet">Баскет дует</string>
+    <string name="sanders_basket">Сандерс баскет</string>
     <string name="btn_trash_bin"></string>
     <string name="btn_categories"></string>
     <string name="btn_favourites"></string>

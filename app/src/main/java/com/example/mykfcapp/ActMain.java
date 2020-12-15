@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.mykfcapp.adapters.AdapterMC;
+import com.example.mykfcapp.adapters.AdapterMD;
 import com.example.mykfcapp.adapters.AdapterVP;
 import com.example.mykfcapp.databinding.ActMainBinding;
 import com.example.mykfcapp.databinding.LaCategoriesBinding;
@@ -16,15 +17,18 @@ import com.example.mykfcapp.databinding.LaFavouritesBinding;
 import com.example.mykfcapp.databinding.LaProfileBinding;
 import com.example.mykfcapp.databinding.LaSearchBinding;
 import com.example.mykfcapp.models.ModelCategory;
+import com.example.mykfcapp.models.ModelDocument;
 
 import java.util.ArrayList;
 
 public class ActMain extends AppCompatActivity
 {
     private RecyclerView recCategories;
+    private RecyclerView recDocuments;
     private AdapterVP adapterVP;
-    private ActMainBinding bnd_act_main;
     private AdapterMC adapterMC;
+    private AdapterMD adapterMD;
+    private ActMainBinding bnd_act_main;
 
 
     @Override
@@ -83,5 +87,11 @@ public class ActMain extends AppCompatActivity
         adapterMC = new AdapterMC();
         adapterMC.setCategories(ModelCategory.getData());
         recCategories.setAdapter(adapterMC);
+
+        recDocuments = bnd_la_favourites.getRoot().findViewById(R.id.recFavourites);
+        recDocuments.setLayoutManager(new LinearLayoutManager(ActMain.this));
+        adapterMD = new AdapterMD();
+        adapterMD.setDocuments(ModelDocument.getData());
+        recDocuments.setAdapter(adapterMD);
     }
 }

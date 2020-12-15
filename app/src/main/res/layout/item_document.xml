@@ -12,9 +12,10 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/docImage"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src="@drawable/kfc6"
+            android:src="@drawable/party_basket"
             android:scaleType="centerCrop"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout

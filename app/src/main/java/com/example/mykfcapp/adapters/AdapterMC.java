@@ -17,14 +17,14 @@ import java.util.List;
 
 public class AdapterMC extends RecyclerView.Adapter<AdapterMC.MCViewHolder>
 {
-    public interface onModelCategoryClickListener
+    public interface OnModelCategoryClickListener
     {
         void onModelCategoryClicked(ModelCategory category);
     }
 
-    private onModelCategoryClickListener onModelCategoryClickListener;
+    private OnModelCategoryClickListener onModelCategoryClickListener;
 
-    public void setOnModelCategoryClickListener(AdapterMC.onModelCategoryClickListener onModelCategoryClickListener)
+    public void setOnModelCategoryClickListener(OnModelCategoryClickListener onModelCategoryClickListener)
     {
         this.onModelCategoryClickListener = onModelCategoryClickListener;
     }
@@ -85,7 +85,7 @@ public class AdapterMC extends RecyclerView.Adapter<AdapterMC.MCViewHolder>
             fileQuantity = itemView.findViewById(R.id.quantityOfFiles);
         }
 
-        public void bindModelCategory(final ModelCategory category)
+        private void bindModelCategory(final ModelCategory category)
         {
             this.catImage.setImageResource(category.getImgId());
             this.catName.setText(category.getCatName());
