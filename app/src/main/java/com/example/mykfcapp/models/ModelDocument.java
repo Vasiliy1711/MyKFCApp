@@ -60,9 +60,9 @@ public class ModelDocument
         this.docDate = docDate;
     }
 
-    public static List<ModelDocument> getData()
+    public static ArrayList<ModelDocument> getData()
     {
-        List<ModelDocument> documents = new ArrayList<>();
+        ArrayList<ModelDocument> documents = new ArrayList<>();
         ModelDocument document1 = new ModelDocument(R.drawable.kfc6, R.string.strips, R.string.doc_description, R.string.date2);
         ModelDocument document2 = new ModelDocument(R.drawable.basket24, R.string.basket24, R.string.doc_description, R.string.date1);
         ModelDocument document3 = new ModelDocument(R.drawable.basket_duet, R.string.basket_duet, R.string.doc_description, R.string.date2);

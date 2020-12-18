@@ -72,9 +72,9 @@ public class ModelCategory
         this.fileQuantity = fileQuantity;
     }
 
-    public static List<ModelCategory> getData()
+    public static ArrayList<ModelCategory> getData()
     {
-        List<ModelCategory> categories = new ArrayList<>();
+        ArrayList<ModelCategory> categories = new ArrayList<>();
         ModelCategory category1 = new ModelCategory(R.drawable.kfc3, R.string.item_name, R.string.description, R.string.date1, R.string.quantity1);
         ModelCategory category2 = new ModelCategory(R.drawable.kfc7, R.string.item_name2, R.string.description, R.string.date2, R.string.quantity2);
         ModelCategory category3 = new ModelCategory(R.drawable.kfc8, R.string.item_name3, R.string.description, R.string.date3, R.string.quantity3);

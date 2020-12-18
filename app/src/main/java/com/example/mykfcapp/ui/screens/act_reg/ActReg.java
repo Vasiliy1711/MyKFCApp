@@ -1,10 +1,12 @@
-package com.example.mykfcapp;
+package com.example.mykfcapp.ui.screens.act_reg;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class RegistrationActivity extends AppCompatActivity
+import com.example.mykfcapp.R;
+
+public class ActReg extends AppCompatActivity
 {
 
     @Override

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_red"
-    tools:context=".ActMain">
+    tools:context=".ui.screens.act_main.ActMain">
 
     <View
         android:layout_width="match_parent"
@@ -32,7 +32,6 @@
         <TextView
             android:id="@+id/textViewEmail"
             style="@style/TVReg.L.ETName"
-
             android:layout_marginBottom="4dp"
             android:text="@string/email" />
 

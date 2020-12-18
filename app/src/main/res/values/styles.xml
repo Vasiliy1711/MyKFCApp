@@ -83,6 +83,16 @@
         <item name="android:gravity">center</item>
     </style>
 
+    <style name="LRTButton">
+        <item name="android:background">@drawable/rounded4_white_red_stroke</item>
+        <item name="android:layout_width">@dimen/view_width</item>
+        <item name="android:layout_height">@dimen/view_height</item>
+        <item name="android:textColor">@color/color_red</item>
+        <item name="android:textSize">@dimen/size_l</item>
+        <item name="fontFamily">@font/exo_reg</item>
+        <item name="android:gravity">center</item>
+    </style>
+
     <style name="TVFavLight">
         <item name="android:hyphenationFrequency">none</item>
         <item name="fontFamily">@font/fa_light</item>
@@ -164,5 +174,36 @@
         <item name="android:textSize">@dimen/size_fav_xl</item>
     </style>
 
+    <style name="TVRegRed">
+        <item name="android:hyphenationFrequency">none</item>
+        <item name="fontFamily">@font/exo_reg</item>
+        <item name="android:textColor">@color/color_red</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TVRegRed.XS">
+        <item name="android:textSize">@dimen/size_xs</item>
+    </style>
+
+    <style name="TVRegRed.S">
+        <item name="android:textSize">@dimen/size_s</item>
+    </style>
+
+    <style name="TVRegRed.M">
+        <item name="android:textSize">@dimen/size_m</item>
+    </style>
+
+    <style name="TVRegRed.L">
+        <item name="android:textSize">@dimen/size_l</item>
+    </style>
+
+    <style name="TVRegRed.XL">
+        <item name="android:textSize">@dimen/size_xl</item>
+    </style>
+
+    <style name="TVRegRed.L.ETName">
+        <item name="android:layout_width">@dimen/view_width</item>
+        <item name="android:layout_height">@dimen/text_view_height</item>
+    </style>
 
 </resources>
