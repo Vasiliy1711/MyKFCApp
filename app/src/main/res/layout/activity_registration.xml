@@ -1,105 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/color_red"
-    tools:context=".ui.screens.act_main.ActMain">
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <View
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="@dimen/oval_length"
-        android:layout_marginTop="64dp"
-        android:layout_marginRight="@dimen/oval_length"
-        android:layout_marginBottom="72dp"
-        android:background="@drawable/circle_white" />
+        android:background="@color/color_red"
+        tools:context=".ui.screens.act_main.ActMain">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/oval_length"
+            android:layout_marginTop="64dp"
+            android:layout_marginRight="@dimen/oval_length"
+            android:layout_marginBottom="72dp"
+            android:background="@drawable/circle_white" />
 
-        <ImageView
-            android:layout_width="@dimen/view_width"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/kfc1" />
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/view_width"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kfc1" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                style="@style/TVReg.L.ETName"
+                android:layout_marginBottom="4dp"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/ediTextName"
+                style="@style/ETCommon"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewSurname"
+                style="@style/TVReg.L.ETName"
+                android:layout_marginBottom="4dp"
+                android:text="@string/surname" />
+
+
+            <EditText
+                android:id="@+id/ediTextSurname"
+                style="@style/ETCommon"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewEditEmail"
+                style="@style/TVReg.L.ETName"
+                android:layout_marginBottom="4dp"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/editTxtEmail"
+                style="@style/ETCommon"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewEditPassword"
+                style="@style/TVReg.L.ETName"
+                android:layout_marginBottom="4dp"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/editTxtPassword"
+                style="@style/ETCommon"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/textViewRepeatPassword"
+                style="@style/TVReg.L.ETName"
+                android:layout_marginBottom="4dp"
+                android:text="@string/repeat" />
+
+            <EditText
+                android:id="@+id/editTxtRepeatPassword"
+                style="@style/ETCommon"
+                android:layout_marginBottom="28dp" />
+
+            <TextView
+                android:id="@+id/buttonRegistration"
+                style="@style/LRButton"
+                android:text="@string/registration" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textViewName"
-            style="@style/TVReg.L.ETName"
-            android:layout_marginBottom="4dp"
-            android:text="@string/name" />
+            android:id="@+id/txtViewPrivacyPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/exo_reg"
+            android:text="@string/privacy_policy"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/size_l" />
 
-        <EditText
-            android:id="@+id/ediTextName"
-            style="@style/ETCommon"
-            android:layout_marginBottom="4dp" />
-
-        <TextView
-            android:id="@+id/textViewSurname"
-            style="@style/TVReg.L.ETName"
-            android:layout_marginBottom="4dp"
-            android:text="@string/surname" />
-
-
-        <EditText
-            android:id="@+id/ediTextSurname"
-            style="@style/ETCommon"
-            android:layout_marginBottom="4dp" />
-
-        <TextView
-            android:id="@+id/textViewEditEmail"
-            style="@style/TVReg.L.ETName"
-            android:layout_marginBottom="4dp"
-            android:text="@string/email" />
-
-        <EditText
-            android:id="@+id/editTxtEmail"
-            style="@style/ETCommon"
-            android:layout_marginBottom="4dp" />
-
-        <TextView
-            android:id="@+id/textViewEditPassword"
-            style="@style/TVReg.L.ETName"
-            android:layout_marginBottom="4dp"
-            android:text="@string/password" />
-
-        <EditText
-            android:id="@+id/editTxtPassword"
-            style="@style/ETCommon"
-            android:layout_marginBottom="4dp" />
-
-        <TextView
-            android:id="@+id/textViewRepeatPassword"
-            style="@style/TVReg.L.ETName"
-            android:layout_marginBottom="4dp"
-            android:text="@string/repeat" />
-
-        <EditText
-            android:id="@+id/editTxtRepeatPassword"
-            style="@style/ETCommon"
-            android:layout_marginBottom="28dp" />
-
-        <TextView
-            android:id="@+id/buttonRegistration"
-            style="@style/LRButton"
-            android:text="@string/registration" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/txtViewPrivacyPolicy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="30dp"
-        android:fontFamily="@font/exo_reg"
-        android:text="@string/privacy_policy"
-        android:textColor="@android:color/white"
-        android:textSize="@dimen/size_l" />
-
-
-</RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -10,14 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.screens.act_reg.ActReg"></activity>
-        <activity android:name=".ui.screens.act_main.ActMain">
+        <activity android:name=".ui.screens.act_entry.ActEntry">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.screens.act_entry.ActEntry" />
+        <activity android:name=".ui.screens.act_main.ActMain" />
     </application>
 
 </manifest>

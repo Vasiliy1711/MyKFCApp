@@ -17,7 +17,7 @@ public class TabProfile extends TabBase implements ProMVP.Presenter
         super(actMain);
         this.mvpView = mvpView;
         mvpView.registerPresenter(this);
-        mvpView.bindUser(ModelUser.getData());
+//        mvpView.bindUser(ModelUser.getData());
     }
 
     @Override
