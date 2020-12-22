@@ -1,10 +1,12 @@
 package com.example.mykfcapp.ui.screens.act_main;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import com.example.mykfcapp.enums.TypeTab;
+import com.example.mykfcapp.models.ModelUser;
+import com.example.mykfcapp.ui.screens.act_base.ActBase;
 import com.example.mykfcapp.ui.screens.act_main.tabs.TabCategories;
 import com.example.mykfcapp.ui.screens.act_main.tabs.TabFavourites;
 import com.example.mykfcapp.ui.screens.act_main.tabs.TabProfile;
@@ -19,7 +21,7 @@ import com.example.mykfcapp.ui.sub_views.la_search.SeaMVP;
 import com.example.mykfcapp.ui.sub_views.la_search.SeaMVPView;
 import java.util.ArrayList;
 
-public class ActMain extends AppCompatActivity implements ActMainMVP.Presenter
+public class ActMain extends ActBase implements ActMainMVP.Presenter
 {
     private ActMainMVP.MVPView mvpView;
     private CatMVP.MVPView mvpViewCat;

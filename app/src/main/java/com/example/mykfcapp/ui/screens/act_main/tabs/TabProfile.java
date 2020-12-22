@@ -2,9 +2,8 @@ package com.example.mykfcapp.ui.screens.act_main.tabs;
 
 import android.content.Intent;
 import android.widget.Toast;
-
-import com.example.mykfcapp.ui.screens.act_entry.ActEntry;
 import com.example.mykfcapp.models.ModelUser;
+import com.example.mykfcapp.ui.screens.act_entry.ActEntry;
 import com.example.mykfcapp.ui.screens.act_main.ActMain;
 import com.example.mykfcapp.ui.sub_views.la_profile.ProMVP;
 
@@ -17,7 +16,12 @@ public class TabProfile extends TabBase implements ProMVP.Presenter
         super(actMain);
         this.mvpView = mvpView;
         mvpView.registerPresenter(this);
-//        mvpView.bindUser(ModelUser.getData());
+        Intent intent = actMain.getIntent();
+        if (intent.hasExtra("user"))
+        {
+            ModelUser user = (ModelUser) intent.getSerializableExtra("user");
+            mvpView.bindUser(user);
+        }w
     }
 
     @Override

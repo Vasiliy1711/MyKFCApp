@@ -41,9 +41,7 @@ public class ActEntryMVPView extends BaseMVPView implements ActEntryMVP.MVPView
             @Override
             public void onClick(View v)
             {
-                userEmail = binding.ediTextEmail.getText().toString().trim();
-                userPassword = binding.ediTextPassword.getText().toString().trim();
-                presenter.onBtnEnterClicked(userEmail, userPassword);
+                presenter.onBtnEnterClicked();
             }
         });
     }
@@ -61,21 +59,18 @@ public class ActEntryMVPView extends BaseMVPView implements ActEntryMVP.MVPView
         this.presenter = presenter;
     }
 
+
     @Override
-    public void showError()
+    public String getEmail()
     {
-        Toast.makeText(rootView.getContext(), "Неверный email или пароль", Toast.LENGTH_SHORT).show();
+        String email = binding.ediTextEmail.getText().toString().trim();
+        return email;
     }
 
     @Override
-    public void showErrorEmpty()
+    public String getPassword()
     {
-        Toast.makeText(rootView.getContext(), "Введите email и пароль", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void showErrorEmptyField()
-    {
-        Toast.makeText(rootView.getContext(), "Все поля должны быть заполнены", Toast.LENGTH_SHORT).show();
+        String password = binding.ediTextPassword.getText().toString().trim();
+        return password;
     }
 }

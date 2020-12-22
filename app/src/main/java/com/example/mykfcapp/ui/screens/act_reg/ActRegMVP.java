@@ -6,11 +6,15 @@ public interface ActRegMVP
 {
     interface MVPView extends BaseMVP<Presenter>
     {
-
+        String getUserName();
+        String getUserSurname();
+        String getUserEmail();
+        String getUserPassword1();
+        String getUserPassword2();
     }
 
     interface Presenter
     {
-
+        void onBtnRegClicked();
     }
 }

@@ -72,6 +72,7 @@
         <item name="android:background">@drawable/rounded4_white_gray_stroke</item>
         <item name="android:layout_width">@dimen/view_width</item>
         <item name="android:layout_height">@dimen/view_height</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="LRButton">

@@ -1,25 +1,31 @@
 package com.example.mykfcapp.models;
 
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
-
-import com.example.mykfcapp.R;
+import java.io.Serializable;
 
 @Entity(tableName = "users")
-public class ModelUser
+public class ModelUser implements Serializable
 {
     @PrimaryKey(autoGenerate = true)
     private int id;
-    private int userImg;
     private String userName;
     private String userEmail;
     private String password;
 
 
-    public ModelUser(int id, int userImg, String userName, String userEmail, String password)
+    public ModelUser(int id, String userName, String userEmail, String password)
     {
         this.id = id;
-        this.userImg = userImg;
+        this.userName = userName;
+        this.userEmail = userEmail;
+        this.password = password;
+    }
+
+    @Ignore
+    public ModelUser(String userName, String userEmail, String password)
+    {
         this.userName = userName;
         this.userEmail = userEmail;
         this.password = password;
@@ -35,15 +41,6 @@ public class ModelUser
         this.id = id;
     }
 
-    public int getUserImg()
-    {
-        return userImg;
-    }
-
-    public void setUserImg(int userImg)
-    {
-        this.userImg = userImg;
-    }
 
     public String getUserName()
     {

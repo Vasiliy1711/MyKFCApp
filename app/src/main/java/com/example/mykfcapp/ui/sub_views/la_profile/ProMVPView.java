@@ -53,10 +53,10 @@ public class ProMVPView extends BaseMVPView implements ProMVP.MVPView
     @Override
     public void bindUser(ModelUser user)
     {
-        binding.imgProfile.setImageResource(user.getUserImg());;
+
         binding.userName.setText(user.getUserName());
         binding.userEmail.setText(user.getUserEmail());
-        binding.imgProfile.setImageBitmap(getRoundedShape(((BitmapDrawable)binding.imgProfile.getDrawable()).getBitmap()));
+//        binding.imgProfile.setImageBitmap(getRoundedShape(((BitmapDrawable)binding.imgProfile.getDrawable()).getBitmap()));
     }
 
     public Bitmap getRoundedShape(Bitmap scaleBitmapImage) {

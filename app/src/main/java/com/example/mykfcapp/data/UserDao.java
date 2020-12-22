@@ -30,10 +30,6 @@ public interface UserDao
     @Delete
     void deleteUser(ModelUser user);
 
-    @Query("SELECT * FROM users WHERE userName == :userEmail")
-    ModelUser getUserByEmail(String userEmail);
-
-    @Query("SELECT * FROM users WHERE password == :password")
-    ModelUser getUserByPassWord(String password);
-
+    @Query("SELECT * FROM users WHERE userEmail == :userEmail AND password == :password")
+    ModelUser getUserByEmail(String userEmail, String password);
 }

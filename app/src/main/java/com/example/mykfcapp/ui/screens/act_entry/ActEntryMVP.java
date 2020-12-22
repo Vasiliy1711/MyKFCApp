@@ -6,15 +6,13 @@ public interface ActEntryMVP
 {
     interface MVPView extends BaseMVP<Presenter>
     {
-        void showError();
-        void showErrorEmpty();
-        void showErrorEmptyField();
-
+        String getEmail();
+        String getPassword();
     }
 
     interface Presenter
     {
         void onRegistrationClicked();
-        void onBtnEnterClicked(String userEmail, String password);
+        void onBtnEnterClicked();
     }
 }
