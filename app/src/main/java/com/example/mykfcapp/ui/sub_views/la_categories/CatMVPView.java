@@ -1,5 +1,6 @@
 package com.example.mykfcapp.ui.sub_views.la_categories;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import androidx.databinding.DataBindingUtil;
@@ -10,6 +11,7 @@ import com.example.mykfcapp.adapters.AdapterMC;
 import com.example.mykfcapp.databinding.ActMainBinding;
 import com.example.mykfcapp.databinding.LaCategoriesBinding;
 import com.example.mykfcapp.models.ModelCategory;
+import com.example.mykfcapp.ui.screens.act_cat.ActCatMVPView;
 import com.example.mykfcapp.ui.sub_views.la_base.BaseMVPView;
 import java.util.ArrayList;
 
@@ -18,6 +20,8 @@ public class CatMVPView extends BaseMVPView implements CatMVP.MVPView
     private CatMVP.Presenter presenter;
     private LaCategoriesBinding binding;
     private AdapterMC adapterMC;
+    private int position;
+
 
     public CatMVPView(LayoutInflater inflater)
     {
@@ -35,10 +39,9 @@ public class CatMVPView extends BaseMVPView implements CatMVP.MVPView
         adapterMC.setOnModelCategoryClickListener(new AdapterMC.OnModelCategoryClickListener()
         {
             @Override
-            public void onModelCategoryClicked(ModelCategory category)
+            public void onModelCategoryClicked()
             {
                 presenter.onItemClicked();
-                binding.relCat.setBackgroundColor(rootView.getResources().getColor(R.color.color_red));
             }
         });
     }

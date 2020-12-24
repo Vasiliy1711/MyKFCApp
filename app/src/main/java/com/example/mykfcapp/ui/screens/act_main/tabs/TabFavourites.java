@@ -22,7 +22,6 @@ public class TabFavourites extends TabBase implements FavMVP.Presenter
     @Override
     public void onItemClicked()
     {
-        Intent intent = new Intent(actMain, ActReg.class);
-        actMain.startActivity(intent);
+
     }
 }

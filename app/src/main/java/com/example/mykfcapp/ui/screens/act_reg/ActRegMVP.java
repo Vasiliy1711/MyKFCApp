@@ -16,5 +16,7 @@ public interface ActRegMVP
     interface Presenter
     {
         void onBtnRegClicked();
+        void onPrivacyClicked();
+
     }
 }

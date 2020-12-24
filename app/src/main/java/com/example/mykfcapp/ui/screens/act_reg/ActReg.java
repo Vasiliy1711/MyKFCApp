@@ -1,10 +1,12 @@
 package com.example.mykfcapp.ui.screens.act_reg;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.mykfcapp.R;
 import com.example.mykfcapp.models.ModelUser;
 import com.example.mykfcapp.ui.screens.act_base.ActBase;
 import com.example.mykfcapp.ui.screens.act_entry.ActEntry;
@@ -14,6 +16,7 @@ import com.example.mykfcapp.utils.ValidationManager;
 public class ActReg extends ActBase implements ActRegMVP.Presenter
 {
     private ActRegMVP.MVPView mvpView;
+    private Dialog dialog;
 
 
     @Override
@@ -23,6 +26,10 @@ public class ActReg extends ActBase implements ActRegMVP.Presenter
         mvpView = new ActRegMVPView(getLayoutInflater());
         mvpView.registerPresenter(this);
         setContentView(mvpView.getRootView());
+
+        dialog = new Dialog(ActReg.this);
+        dialog.setContentView(R.layout.la_dialog);
+
     }
 
     @Override
@@ -49,4 +56,11 @@ public class ActReg extends ActBase implements ActRegMVP.Presenter
         Intent intent = new Intent(ActReg.this, ActEntry.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onPrivacyClicked()
+    {
+        dialog.show();
+    }
+
 }

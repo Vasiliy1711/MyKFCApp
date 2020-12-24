@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mykfcapp.R;
+import com.example.mykfcapp.enums.TypeCat;
 import com.example.mykfcapp.models.ModelCategory;
 
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class AdapterMC extends RecyclerView.Adapter<AdapterMC.MCViewHolder>
 {
     public interface OnModelCategoryClickListener
     {
-        void onModelCategoryClicked(ModelCategory category);
+        void onModelCategoryClicked();
     }
 
     private OnModelCategoryClickListener onModelCategoryClickListener;
@@ -30,6 +31,7 @@ public class AdapterMC extends RecyclerView.Adapter<AdapterMC.MCViewHolder>
     }
 
     private List<ModelCategory> categories;
+
 
     public AdapterMC()
     {
@@ -67,7 +69,7 @@ public class AdapterMC extends RecyclerView.Adapter<AdapterMC.MCViewHolder>
         return categories.size();
     }
 
-    class MCViewHolder extends RecyclerView.ViewHolder
+    public class MCViewHolder extends RecyclerView.ViewHolder
     {
         private ImageView catImage;
         private TextView catName;
@@ -99,10 +101,11 @@ public class AdapterMC extends RecyclerView.Adapter<AdapterMC.MCViewHolder>
                 {
                     if (onModelCategoryClickListener != null)
                     {
-                        onModelCategoryClickListener.onModelCategoryClicked(category);
+                        onModelCategoryClickListener.onModelCategoryClicked();
                     }
                 }
             });
         }
+
     }
 }

@@ -21,7 +21,7 @@ public class TabProfile extends TabBase implements ProMVP.Presenter
         {
             ModelUser user = (ModelUser) intent.getSerializableExtra("user");
             mvpView.bindUser(user);
-        }w
+        }
     }
 
     @Override

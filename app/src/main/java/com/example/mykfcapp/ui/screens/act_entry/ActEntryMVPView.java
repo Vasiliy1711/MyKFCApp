@@ -14,8 +14,6 @@ public class ActEntryMVPView extends BaseMVPView implements ActEntryMVP.MVPView
 {
     private ActEntryMVP.Presenter presenter;
     private ActivityEntryBinding binding;
-    private String userEmail;
-    private String userPassword;
 
     public ActEntryMVPView(LayoutInflater inflater)
     {

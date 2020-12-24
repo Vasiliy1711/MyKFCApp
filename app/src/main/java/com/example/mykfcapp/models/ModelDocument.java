@@ -12,6 +12,8 @@ public class ModelDocument
     private int docDescription;
     private int docDate;
 
+    public ModelDocument(){}
+
     public ModelDocument(int docImg, int docName, int docDescription, int docDate)
     {
         this.docImg = docImg;

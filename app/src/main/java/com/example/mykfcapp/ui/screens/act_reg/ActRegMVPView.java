@@ -35,6 +35,15 @@ public class ActRegMVPView extends BaseMVPView implements ActRegMVP.MVPView
                 presenter.onBtnRegClicked();
             }
         });
+
+        binding.txtViewPrivacyPolicy.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                presenter.onPrivacyClicked();
+            }
+        });
     }
 
     @Override

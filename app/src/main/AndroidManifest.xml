@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.screens.act_reg.ActReg"></activity>
+        <activity android:name=".ui.screens.act_cat.ActCat"></activity>
+        <activity android:name=".ui.screens.act_reg.ActReg" />
         <activity android:name=".ui.screens.act_entry.ActEntry">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
