@@ -19,6 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.screens.act_main.ActMain" />
+        <activity android:name=".ui.screens.ActTest"
+            android:theme="@style/Theme.Transparent"/>
     </application>
 
 </manifest>
+

@@ -20,9 +20,11 @@ public class TabCategories extends TabBase implements CatMVP.Presenter
     }
 
     @Override
-    public void onItemClicked()
+    public void onItemClicked(ModelCategory category)
     {
+
         Intent intent = new Intent(actMain.getApplicationContext(), ActCat.class);
+        intent.putExtra("category", category);
         actMain.startActivity(intent);
     }
 }

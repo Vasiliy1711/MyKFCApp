@@ -1,11 +1,9 @@
 package com.example.mykfcapp.ui.screens.act_main;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import com.example.mykfcapp.enums.TypeTab;
-import com.example.mykfcapp.models.ModelUser;
 import com.example.mykfcapp.ui.screens.act_base.ActBase;
 import com.example.mykfcapp.ui.screens.act_main.tabs.TabCategories;
 import com.example.mykfcapp.ui.screens.act_main.tabs.TabFavourites;

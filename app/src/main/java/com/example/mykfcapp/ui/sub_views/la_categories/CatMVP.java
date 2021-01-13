@@ -13,6 +13,6 @@ public interface CatMVP
 
     interface Presenter
     {
-        void onItemClicked();
+        void onItemClicked(ModelCategory category);
     }
 }

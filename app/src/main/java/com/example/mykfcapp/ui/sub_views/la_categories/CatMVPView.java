@@ -39,9 +39,9 @@ public class CatMVPView extends BaseMVPView implements CatMVP.MVPView
         adapterMC.setOnModelCategoryClickListener(new AdapterMC.OnModelCategoryClickListener()
         {
             @Override
-            public void onModelCategoryClicked()
+            public void onModelCategoryClicked(ModelCategory category)
             {
-                presenter.onItemClicked();
+                presenter.onItemClicked(category);
             }
         });
     }

@@ -15,11 +15,12 @@
             android:background="@drawable/rounded4_white"
             android:orientation="horizontal">
 
-            <TextView
+            <EditText
                 android:id="@+id/txt_search_in_la_search"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
+                android:background="@null"
                 android:layout_weight="10"
                 android:hint="@string/txt_search"
                 android:padding="10dp" />

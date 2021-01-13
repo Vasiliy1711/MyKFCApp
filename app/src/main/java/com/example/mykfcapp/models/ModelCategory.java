@@ -2,10 +2,11 @@ package com.example.mykfcapp.models;
 
 import com.example.mykfcapp.R;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ModelCategory
+public class ModelCategory implements Serializable
 {
     private int imgId;
     private int catName;

@@ -60,4 +60,10 @@ public class ActCatMVPView extends BaseMVPView implements ActCatMVP.MVPView
     {
         adapterMD.setDocuments(items);
     }
+
+    @Override
+    public void setCatName(int catName)
+    {
+        binding.catName.setText(catName);
+    }
 }

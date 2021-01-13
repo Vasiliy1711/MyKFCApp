@@ -8,15 +8,18 @@ import android.widget.Toast;
 
 import com.example.mykfcapp.R;
 import com.example.mykfcapp.models.ModelUser;
+import com.example.mykfcapp.ui.dialogs.DialogTest;
+import com.example.mykfcapp.ui.screens.ActTest;
 import com.example.mykfcapp.ui.screens.act_base.ActBase;
 import com.example.mykfcapp.ui.screens.act_entry.ActEntry;
 import com.example.mykfcapp.utils.ValidationData;
 import com.example.mykfcapp.utils.ValidationManager;
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
 public class ActReg extends ActBase implements ActRegMVP.Presenter
 {
     private ActRegMVP.MVPView mvpView;
-    private Dialog dialog;
+
 
 
     @Override
@@ -26,10 +29,6 @@ public class ActReg extends ActBase implements ActRegMVP.Presenter
         mvpView = new ActRegMVPView(getLayoutInflater());
         mvpView.registerPresenter(this);
         setContentView(mvpView.getRootView());
-
-        dialog = new Dialog(ActReg.this);
-        dialog.setContentView(R.layout.la_dialog);
-
     }
 
     @Override
@@ -60,7 +59,15 @@ public class ActReg extends ActBase implements ActRegMVP.Presenter
     @Override
     public void onPrivacyClicked()
     {
-        dialog.show();
+
+        Intent intent = new Intent(this, ActTest.class);
+        startActivity(intent);
+//        BottomSheetDialogFragment dialog = new DialogTest();
+//        dialog.show(getSupportFragmentManager(), null);
+
+//        Dialog dialog = new Dialog(ActReg.this);
+//        dialog.setContentView(R.layout.la_dialog);
+//        dialog.show();
     }
 
 }

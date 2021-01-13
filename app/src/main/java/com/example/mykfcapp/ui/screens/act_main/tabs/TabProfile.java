@@ -1,8 +1,11 @@
 package com.example.mykfcapp.ui.screens.act_main.tabs;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.widget.Toast;
 import com.example.mykfcapp.models.ModelUser;
+import com.example.mykfcapp.ui.screens.ActTest;
 import com.example.mykfcapp.ui.screens.act_entry.ActEntry;
 import com.example.mykfcapp.ui.screens.act_main.ActMain;
 import com.example.mykfcapp.ui.sub_views.la_profile.ProMVP;
@@ -27,6 +30,8 @@ public class TabProfile extends TabBase implements ProMVP.Presenter
     @Override
     public void onExitButtonClicked()
     {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(actMain.getApplicationContext());
+        preferences.edit().remove("user").apply();
         Intent intent = new Intent(actMain, ActEntry.class);
         actMain.startActivity(intent);
     }
@@ -34,6 +39,7 @@ public class TabProfile extends TabBase implements ProMVP.Presenter
     @Override
     public void onPrivacyPolicyClicked()
     {
-        Toast.makeText(actMain.getApplicationContext(), "Политика конфиденциальности", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(actMain.getApplicationContext(), ActTest.class);
+        actMain.startActivity(intent);
     }
 }

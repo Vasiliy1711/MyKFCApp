@@ -10,6 +10,7 @@ public interface ActCatMVP
     interface MVPView extends BaseMVP<Presenter>
     {
         void bindItems(ArrayList<ModelDocument> items);
+        void setCatName(int catName);
     }
 
     interface Presenter

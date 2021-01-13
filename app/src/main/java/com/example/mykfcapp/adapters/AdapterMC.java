@@ -20,7 +20,7 @@ public class AdapterMC extends RecyclerView.Adapter<AdapterMC.MCViewHolder>
 {
     public interface OnModelCategoryClickListener
     {
-        void onModelCategoryClicked();
+        void onModelCategoryClicked(ModelCategory category);
     }
 
     private OnModelCategoryClickListener onModelCategoryClickListener;
@@ -101,7 +101,7 @@ public class AdapterMC extends RecyclerView.Adapter<AdapterMC.MCViewHolder>
                 {
                     if (onModelCategoryClickListener != null)
                     {
-                        onModelCategoryClickListener.onModelCategoryClicked();
+                        onModelCategoryClickListener.onModelCategoryClicked(category);
                     }
                 }
             });
